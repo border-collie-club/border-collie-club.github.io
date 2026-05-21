@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://border-collie-club.github.io/sitemap.xml
