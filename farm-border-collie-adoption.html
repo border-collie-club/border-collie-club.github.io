@@ -223,6 +223,43 @@ a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="b
 /* readable on the dark featured card (blue-link rule is stronger than plain classes) */
 .main-content>article:first-of-type h2 a:is(#_,a),.main-content>article:first-of-type h2 a:is(#_,a):visited{color:#f5ffe9!important}
 </style>
+
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="Adopting a Farm Border Collie: First Weeks at Home">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://border-collie-club.github.io/farm-border-collie-adoption.html">
+<meta property="og:description" content="Adopting a farm-bred or failed working Border Collie? What the first weeks bring: floors, stairs, traffic, house training and a personal practice planner.">
+<meta property="og:image" content="https://border-collie-club.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://border-collie-club.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Border Collie standing in a green meadow">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Adopting a Farm Border Collie: First Weeks at Home">
+<meta name="twitter:description" content="Adopting a farm-bred or failed working Border Collie? What the first weeks bring: floors, stairs, traffic, house training and a personal practice planner.">
+<meta name="twitter:image" content="https://border-collie-club.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="Border Collie standing in a green meadow">
+<!-- social-cards:end -->
 </head>
 <body>
 <header class="sc-topbar">
@@ -262,7 +299,7 @@ a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="b
     <p class="lead">A personal plan for floors, stairs, house training, traffic and a replacement job for a dog that grew up with sheep, not sofas.</p>
   </div>
 </section>
-<div class="layout">
+<div class="layout" data-follow-parent="true">
   <article class="article"><nav class="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/blog.html">Blog</a><span>›</span><span aria-current="page">Farm Border Collie adoption</span></nav><style>.article a{color:#0066cc}.article a:visited{color:#0052a3}.article a:hover{text-decoration:underline}.article{min-width:0}.house-tool{border:2px solid #1a3a1a;border-radius:12px;padding:18px;background:#f6faf4;margin:24px 0}.house-tool h2{margin-top:0}.house-tool fieldset{border:1px solid #c9d9bf;border-radius:8px;padding:12px 14px;margin:14px 0}.house-tool legend{font-weight:700;padding:0 6px}.house-tool label{display:flex;gap:10px;align-items:flex-start;margin:6px 0;font-weight:400}.house-tool select{font:inherit;width:100%;min-width:0;padding:8px;border:1px solid #aebcae;border-radius:5px}.house-tool button{font:inherit;background:#1a3a1a;color:#fff;border:0;border-radius:6px;padding:10px 14px;margin:12px 8px 0 0;cursor:pointer}.house-tool :focus-visible{outline:3px solid #0066cc;outline-offset:3px}#house-plan{padding:14px;background:#fff;border-left:4px solid #1a3a1a;margin-top:16px;overflow-wrap:anywhere}#house-plan ol{margin:8px 0 0}.article .aios-video-card a{color:#0066cc}.article .aios-video-card a:visited{color:#0052a3}@media(max-width:480px){.house-tool{padding:12px}}</style>
 <p>Adopting a farm-bred or failed working Border Collie usually means taking home an adult dog that knows sheep, wind and a whistle far better than sofas, stairs and doorbells. The first weeks are less about obedience and more about translating your house into something the dog can predict. This guide helps you build that translation around your own dog and your own home, instead of a generic rescue checklist.</p>
 <blockquote><strong>Quick answer:</strong> Expect a quiet, watchful dog for the first days, a learning phase over the first few weeks, and a settling period that rescue organizations describe as anything from three weeks to six months or longer. Keep the world small, introduce one house novelty at a time, use a lead or long line outdoors, and give the dog a short daily "job" that replaces stock work without recreating it on your family.</blockquote>
@@ -402,7 +439,7 @@ a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="b
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do failed working Border Collies make good pets?", "acceptedAnswer": {"@type": "Answer", "text": "Many do. A dog that lacked the drive or style for stock work may be calmer than a top working dog, but it still needs routine, training and daily mental work. Ask the farm or rescue why the dog left work and how it behaves around people."}}, {"@type": "Question", "name": "How long will a farm-bred Border Collie take to settle?", "acceptedAnswer": {"@type": "Answer", "text": "Rescue organizations describe a range of three weeks to six months or longer. Owners of ex-farm collies report anything from a couple of months to around eight months before the dog seemed fully at home."}}, {"@type": "Question", "name": "My new farm collie is terrified of me. What should I do?", "acceptedAnswer": {"@type": "Answer", "text": "Give space. Sit low, avoid eye contact, toss food without reaching, and let the dog approach on its own terms. Keep the routine identical every day. If fear does not ease over several weeks, contact a qualified reward-based trainer or behavior professional."}}, {"@type": "Question", "name": "Can an ex-working Border Collie live in a city?", "acceptedAnswer": {"@type": "Answer", "text": "It can, but the gap between farm and city is large. Expect slower progress with traffic and crowds, and start practice in the quietest places available before moving closer to busy streets."}}, {"@type": "Question", "name": "Should I let my adopted sheepdog herd my other pets?", "acceptedAnswer": {"@type": "Answer", "text": "No. Interrupt stalking early and redirect to a game you control. Letting the dog practice herding cats, dogs or children makes the habit stronger."}}, {"@type": "Question", "name": "Will an outdoor farm dog ever be house trained?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, in most cases. Adult dogs learn quickly with a strict schedule, a single toilet spot and immediate rewards outside. Plan for accidents in the first days and supervise closely until the pattern is clear."}}]}</script>
 </article>
 
-  <aside class="sidebar">
+  <aside class="sidebar" data-follow-sidebar="existing">
     
     
     <section class="sidebar-panel"><h3>Quick Links</h3><ul><li><a href="/">Home page</a></li><li><a href="/blog.html">All posts</a></li><li><a href="/care.html">Border Collie care checklist</a></li><li><a href="/about.html">About this site</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/sitemap.html">Sitemap</a></li></ul><h3 style="margin-top:16px;">Latest articles</h3><ul class="latest-list" style="margin:0;padding-left:18px"><li><a href="/border-collie-call-ending.html">Why Your Border Collie Gets Excited When Work Calls End—and How to Teach a Calm Finish</a></li><li><a href="/border-collie-weight-growth.html">How Much Do Border Collies Weigh? Adult Reports and Growth by Age</a></li><li><a href="/border-collie-herding-cats-kids.html">How to Stop a Border Collie Herding Cats and Kids (Without Killing the Instinct)</a></li><li><a href="/border-collie-teenage-phase.html">Border Collie Teenage Phase: What Happens From 6 to 24 Months and How to Get Through It</a></li><li><a href="/can-border-collies-be-left-alone.html">8 Hours Max: Border Collies Alone—Why Less Is Better</a></li></ul></section>

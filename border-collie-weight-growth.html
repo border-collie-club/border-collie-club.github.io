@@ -213,6 +213,43 @@ a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="b
 /* readable on the dark featured card (blue-link rule is stronger than plain classes) */
 .main-content>article:first-of-type h2 a:is(#_,a),.main-content>article:first-of-type h2 a:is(#_,a):visited{color:#f5ffe9!important}
 </style>
+
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="Border Collie Weight: Owner Reports and Growth by Age">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://border-collie-club.github.io/border-collie-weight-growth.html">
+<meta property="og:description" content="How much do Border Collies weigh? Compare 19 adult owner reports with the breed standard, explore one puppy’s growth log, and calculate your own weight changes.">
+<meta property="og:image" content="https://border-collie-club.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://border-collie-club.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Border Collie standing in a green meadow">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Border Collie Weight: Owner Reports and Growth by Age">
+<meta name="twitter:description" content="How much do Border Collies weigh? Compare 19 adult owner reports with the breed standard, explore one puppy’s growth log, and calculate your own weight changes.">
+<meta name="twitter:image" content="https://border-collie-club.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="Border Collie standing in a green meadow">
+<!-- social-cards:end -->
 </head>
 <body>
 <header class="sc-topbar">
@@ -248,7 +285,7 @@ a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="b
     <p class="lead">A transparent owner-report sample, a separate puppy record, and tools for comparing your own measurements.</p>
   </div>
 </section>
-<div class="layout">
+<div class="layout" data-follow-parent="true">
   <article class="article"><nav class="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/blog.html">Blog</a><span>›</span><span aria-current="page">Weight and growth</span></nav><p class="meta">By Callum Reid · Border Collie Club</p><style>.article a{color:#0066cc}.article a:visited{color:#0052a3}.article a:hover{text-decoration:underline}.weight-tool{border:2px solid #1a3a1a;border-radius:12px;padding:18px;margin:24px 0;background:#f6faf4}.weight-tool h2{margin-top:0}.weight-tool label{display:block;font-weight:600;margin:12px 0 5px}.weight-tool input,.weight-tool select{box-sizing:border-box;width:100%;min-width:0;max-width:100%;padding:9px;border:1px solid #aebcae;border-radius:5px;font:inherit}.weight-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 16px}.weight-tool button{font:inherit;background:#1a3a1a;color:#fff;border:0;border-radius:6px;padding:10px 14px;margin:14px 8px 0 0;cursor:pointer}.weight-tool :focus-visible{outline:3px solid #0066cc;outline-offset:3px}#growth-result{background:#fff;border-left:4px solid #1a3a1a;padding:12px;margin-top:16px;overflow-wrap:anywhere}.table-scroll{overflow-x:auto;max-width:100%}.article{min-width:0}.article figcaption{font-size:.86rem;color:#4b5563;margin-top:7px}@media(max-width:480px){.weight-grid{grid-template-columns:1fr}.weight-tool{padding:12px}}</style><p>If you are asking “how much do Border Collies weigh?”, owner reports are useful only when you know the dog's age, the units, and whether the number describes a puppy or an adult. This comparison gives you an inspectable set of adult reports and a separate puppy record, so you can keep your own measurements without letting someone else's dog become your target.</p>
 <blockquote><strong>Quick answer:</strong> In our small, self-selected sample of 19 dogs reported as Border Collies and aged at least two years, weights ran from 11.5 to 33.6 kg (25.4–74 lb), with a median of 19.1 kg (42 lb). These are forum reports, not verified breed measurements or recommended weights. The Royal Kennel Club standard describes ideal height rather than prescribing a kilogram target.</blockquote>
 <section class="weight-tool" aria-labelledby="weight-tool-heading">
@@ -313,7 +350,7 @@ a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="b
 <h2>Keep the comparison under your control</h2>
 <p>How much Border Collies weigh depends on which dogs and which records you are describing. Here, the useful result is a transparent adult sample, a separately labeled puppy sequence, and a calculator that works with your own observations. Keep the standard, the anecdotes, and your dog's log distinct, and you can use each without turning it into a promise it cannot support.</p>
 <p class="ai-note" style="border-left:4px solid #1a3a1a;background:#f7f9fa;padding:12px 16px;margin:24px 0;font-size:0.9rem;color:#4b5563"><strong>Written by Callum Reid.</strong> Created with AI assistance.</p><script>(function(){'use strict';var form=document.getElementById('growth-form'),unit=document.getElementById('weight-unit'),result=document.getElementById('growth-result'),previousUnit=unit.value;var factor=0.45359237;function input(id){var raw=document.getElementById(id).value.trim();return raw===''?NaN:Number(raw);}function show(text){result.textContent=text;}form.addEventListener('submit',function(event){event.preventDefault();var a=input('age-first'),b=input('age-last'),w=input('weight-first'),v=input('weight-last');if(![a,b,w,v].every(Number.isFinite)||a<0||b<=a||w<=0||v<=0){show('Enter positive weights and valid ages. The later age must be greater than the earlier age.');return;}var scale=unit.value==='lb'?factor:1,firstKg=w*scale,lastKg=v*scale,weeks=b-a,change=lastKg-firstKg,rate=change/weeks;if(![firstKg,lastKg,weeks,change,rate].every(Number.isFinite)){show('These inputs exceed the calculator range. Check the numbers and try again.');return;}show('Recorded interval: '+weeks.toFixed(2)+' weeks. Earlier weight: '+firstKg.toFixed(3)+' kg ('+(firstKg/factor).toFixed(2)+' lb). Later weight: '+lastKg.toFixed(3)+' kg ('+(lastKg/factor).toFixed(2)+' lb). Recorded change: '+change.toFixed(3)+' kg ('+(change/factor).toFixed(2)+' lb). Average change across this interval: '+rate.toFixed(3)+' kg per week. Calculated decimals do not increase the accuracy of your scale. This is a description of two records, not an adult-weight prediction or a size rating.');});unit.addEventListener('change',function(){if(unit.value!==previousUnit){['weight-first','weight-last'].forEach(function(id){var el=document.getElementById(id),value=input(id);if(Number.isFinite(value)){el.value=(unit.value==='lb'?value/factor:value*factor).toFixed(6);}});previousUnit=unit.value;show('Entered weights converted to '+unit.value+'. Recalculate to refresh the result.');}});document.getElementById('weight-clear').addEventListener('click',function(){form.reset();previousUnit=unit.value;show('Your result will appear here. Use your records, or try the puppy measurements in the table below.');});})();</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the average weight in this owner sample?", "acceptedAnswer": {"@type": "Answer", "text": "The median is 19.1 kg (42 lb) across 19 included dogs. It is the middle reported weight, not a breed-wide average or a target for your dog."}}, {"@type": "Question", "name": "Does the breed standard give a weight target?", "acceptedAnswer": {"@type": "Answer", "text": "The Royal Kennel Club standard used here gives an ideal male height of 53 cm (21 inches), with females slightly smaller. Its size section does not prescribe a kilogram target."}}, {"@type": "Question", "name": "How much should a Border Collie weigh at ten weeks?", "acceptedAnswer": {"@type": "Answer", "text": "We do not have a validated breed-wide target. The puppy sequence shown here includes one owner-reported reading of 7.3 kg at ten weeks; that is an observation about one puppy, not a recommendation."}}, {"@type": "Question", "name": "When do Border Collies stop growing?", "acceptedAnswer": {"@type": "Answer", "text": "These self-reported discussions do not establish a reliable breed-wide stopping age. Keep dated measurements rather than treating an anecdotal deadline as a guarantee."}}, {"@type": "Question", "name": "Are the adult weights verified purebred measurements?", "acceptedAnswer": {"@type": "Answer", "text": "No. The dogs were reported as Border Collies, and explicitly identified mixes were excluded. Ancestry, scales, and weights were not independently verified."}}, {"@type": "Question", "name": "Can I calculate adult weight by doubling a puppy measurement?", "acceptedAnswer": {"@type": "Answer", "text": "The records here do not validate that formula. The calculator reports the observed change between two measurements and does not extrapolate an adult weight."}}]}</script></article>
-  <aside class="sidebar">
+  <aside class="sidebar" data-follow-sidebar="existing">
     
     
     <section class="sidebar-panel"><h3>Quick Links</h3><ul><li><a href="/">Home page</a></li><li><a href="/blog.html">All posts</a></li><li><a href="/care.html">Border Collie care checklist</a></li><li><a href="/about.html">About this site</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/sitemap.html">Sitemap</a></li></ul><h3 style="margin-top:16px;">Latest articles</h3><ul class="latest-list" style="margin:0;padding-left:18px"><li><a href="/farm-border-collie-adoption.html">Adopting a Farm-Bred or Failed Working Border Collie: What to Expect in the First Weeks of House Life</a></li><li><a href="/border-collie-call-ending.html">Why Your Border Collie Gets Excited When Work Calls End—and How to Teach a Calm Finish</a></li><li><a href="/border-collie-herding-cats-kids.html">How to Stop a Border Collie Herding Cats and Kids (Without Killing the Instinct)</a></li><li><a href="/border-collie-teenage-phase.html">Border Collie Teenage Phase: What Happens From 6 to 24 Months and How to Get Through It</a></li><li><a href="/can-border-collies-be-left-alone.html">8 Hours Max: Border Collies Alone—Why Less Is Better</a></li></ul></section>
