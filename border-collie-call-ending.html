@@ -223,6 +223,43 @@ a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="b
 /* readable on the dark featured card (blue-link rule is stronger than plain classes) */
 .main-content>article:first-of-type h2 a:is(#_,a),.main-content>article:first-of-type h2 a:is(#_,a):visited{color:#f5ffe9!important}
 </style>
+
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="Border Collie Excited When Calls End? Teach a Calm Finish">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://border-collie-club.github.io/border-collie-call-ending.html">
+<meta property="og:description" content="Border Collie excited when work calls end? Separate goodbye, meeting sounds, and laptop cues with a practice plan, clear invitations, and an observation log.">
+<meta property="og:image" content="https://border-collie-club.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://border-collie-club.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Border Collie standing in a green meadow">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Border Collie Excited When Calls End? Teach a Calm Finish">
+<meta name="twitter:description" content="Border Collie excited when work calls end? Separate goodbye, meeting sounds, and laptop cues with a practice plan, clear invitations, and an observation log.">
+<meta name="twitter:image" content="https://border-collie-club.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="Border Collie standing in a green meadow">
+<!-- social-cards:end -->
 </head>
 <body>
 <header class="sc-topbar">
@@ -260,7 +297,7 @@ a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="b
     <p class="lead">A simple transition routine, separate cue rehearsals, and a quick log for the moment your meeting finishes.</p>
   </div>
 </section>
-<div class="layout">
+<div class="layout" data-follow-parent="true">
   <article class="article"><nav class="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/blog.html">Blog</a><span>›</span><span aria-current="page">Calm call endings</span></nav><p class="meta">By Callum Reid · Border Collie Club</p><style>.article a{color:#0066cc}.article a:visited{color:#0052a3}.article a:hover{text-decoration:underline}.article{min-width:0}.finish-tool{border:2px solid #1a3a1a;border-radius:12px;padding:18px;background:#f6faf4;margin:24px 0}.finish-tool h2{margin-top:0}.finish-tool label{display:block;font-weight:600;margin:12px 0 5px}.finish-tool select{font:inherit;width:100%;min-width:0;padding:8px;border:1px solid #aebcae;border-radius:5px}.finish-tool button{font:inherit;background:#1a3a1a;color:white;border:0;border-radius:6px;padding:10px 14px;margin:12px 8px 0 0;cursor:pointer}.finish-tool :focus-visible{outline:3px solid #0066cc;outline-offset:3px}.finish-scroll{max-width:100%;overflow-x:auto}#finish-summary{padding:12px;background:white;border-left:4px solid #1a3a1a;margin-top:16px;overflow-wrap:anywhere}.article .aios-video-card a{color:#0066cc}.article .aios-video-card a:visited{color:#0052a3}@media(max-width:480px){.finish-tool{padding:12px}}</style><p>When your Border Collie gets excited when work calls end, the difficult moment may be the transition itself: you say goodbye, move your hand toward the laptop, and suddenly a toy lands in your lap. You need a workable way to finish a note or move to your next task, without turning every meeting into a training project. Start by separating the signals your dog notices from the moment you actually become available.</p>
 <blockquote><strong>Quick answer:</strong> Observe which part of the ending comes first, practice that signal gently outside real meetings, and reward an easy alternative such as resting nearby. Add a separate invitation for interaction that you can reliably honor. The outline below is a practical adaptation of reward-based training principles, not a tested Border Collie protocol or a promise of results.</blockquote>
 <section class="finish-tool" aria-labelledby="finish-log-heading">
@@ -326,7 +363,7 @@ a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="b
 <h2>A simpler finish starts before the call ends</h2>
 <p>When your Border Collie gets excited when work calls end, start with a small observation: which sound, word, or movement comes first? Practice an easier version away from meetings, keep a real resting skill separate from waiting intensely, and invite interaction only when you can provide it. A short, repeatable transition and a useful record give you and your trainer something concrete to work with.</p>
 <p class="ai-note" style="border-left:4px solid #1a3a1a;background:#f7f9fa;padding:12px 16px;margin:24px 0;font-size:0.9rem;color:#4b5563"><strong>Written by Callum Reid.</strong> Created with AI assistance.</p><script>(function(){'use strict';var rows=[],form=document.getElementById('finish-form'),tbody=document.getElementById('finish-rows'),summary=document.getElementById('finish-summary');var signals={goodbye:'Spoken goodbye',sound:'Meeting-end sound',lid:'Laptop lid movement'},contexts={practice:'Quiet practice',real:'Real call'},responses={settled:'Remained comfortably settled',returned:'Looked up, then disengaged',persistent:'Persistent staring, following, or vocalizing',stop:'Jumping, mouthing, or unable to continue comfortably'};var next={settled:'Keep this setup recorded. Compare similarly easy opportunities before considering one small change.',returned:'Repeat the same easy version and observe whether disengaging stays comfortable. Do not automatically make it harder.',persistent:'Pause and simplify the signal or setting next time. Return to resting practice away from calls if needed.',stop:'Stop this rehearsal and use a familiar comfortable arrangement. Ask a qualified reward-based trainer to help choose a starting point.'};form.addEventListener('submit',function(event){event.preventDefault();var s=document.getElementById('finish-signal').value,c=document.getElementById('finish-context').value,r=document.getElementById('finish-response').value;if(!Object.prototype.hasOwnProperty.call(signals,s)||!Object.prototype.hasOwnProperty.call(contexts,c)||!Object.prototype.hasOwnProperty.call(responses,r)){summary.textContent='Choose a listed signal, setting, and observed response.';return;}rows.push({signal:s,context:c,response:r});var tr=document.createElement('tr');[String(rows.length),signals[s],contexts[c],responses[r]].forEach(function(text){var td=document.createElement('td');td.textContent=text;tr.appendChild(td);});tbody.appendChild(tr);var practice=rows.filter(function(x){return x.context==='practice';}).length;summary.textContent=rows.length+' observations: '+practice+' quiet practice, '+(rows.length-practice)+' real call endings. '+next[r]+' These categories describe your entries; they are not a success rate or a training assessment. Entries disappear on reload.';});document.getElementById('finish-clear').addEventListener('click',function(){rows=[];tbody.replaceChildren();form.reset();summary.textContent='No observations yet. Entries stay on this page only and disappear when you reload.';});})();</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why does my Border Collie react before I say goodbye?", "acceptedAnswer": {"@type": "Answer", "text": "The relevant signal might be a change in your voice, posture, hand movement, or equipment. Observe the earliest response rather than assuming the final word is the only cue."}}, {"@type": "Question", "name": "Should I stop saying goodbye on work calls?", "acceptedAnswer": {"@type": "Answer", "text": "You can alter your work setup temporarily, but changing one word does not show which signal matters. Practice an easy version separately and keep the actual meeting ending out of demanding experiments."}}, {"@type": "Question", "name": "Does closing the laptop need a separate exercise?", "acceptedAnswer": {"@type": "Answer", "text": "It can, if lid or hand movement is the first thing your dog notices. Begin with a smaller movement without the goodbye, meeting sound, or standing up, and keep the trial comfortable."}}, {"@type": "Question", "name": "What if my dog is quiet but staring at me?", "acceptedAnswer": {"@type": "Answer", "text": "Do not count silence alone as relaxed settling. Look for comfortable disengagement and ordinary activity, and ask a reward-based trainer to help interpret the response if you are unsure."}}, {"@type": "Question", "name": "How many repetitions will fix the problem?", "acceptedAnswer": {"@type": "Answer", "text": "This outline has no validated repetition count or completion deadline. Compare similar, comfortable opportunities and simplify the next setup if the response becomes persistent or intense."}}, {"@type": "Question", "name": "Is this a trainer-verified protocol for my dog?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is an editorial practice outline grounded in general reward-based guidance. Have a qualified reward-based trainer assess your dog and review the plan, especially before combining difficult signals."}}]}</script></article>
-  <aside class="sidebar">
+  <aside class="sidebar" data-follow-sidebar="existing">
     
     
     <section class="sidebar-panel"><h3>Quick Links</h3><ul><li><a href="/">Home page</a></li><li><a href="/blog.html">All posts</a></li><li><a href="/care.html">Border Collie care checklist</a></li><li><a href="/about.html">About this site</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/sitemap.html">Sitemap</a></li></ul><h3 style="margin-top:16px;">Latest articles</h3><ul class="latest-list" style="margin:0;padding-left:18px"><li><a href="/border-collie-weight-growth.html">How Much Do Border Collies Weigh? Adult Reports and Growth by Age</a></li><li><a href="/border-collie-herding-cats-kids.html">How to Stop a Border Collie Herding Cats and Kids (Without Killing the Instinct)</a></li><li><a href="/border-collie-teenage-phase.html">Border Collie Teenage Phase: What Happens From 6 to 24 Months and How to Get Through It</a></li><li><a href="/can-border-collies-be-left-alone.html">8 Hours Max: Border Collies Alone—Why Less Is Better</a></li><li><a href="/border-collie-obsessive-behavior-statistics.html">Border Collie Obsession: 73% Show Signs — Act Now</a></li></ul></section>
