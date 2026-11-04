@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Border Collie Exercise: Owner Routines and Rest Days</title>
+<meta name="description" content="How much exercise does a Border Collie need? Compare owner-reported routines, separate sheep work from daily activity, and build a clear plan for quieter days." />
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://border-collie-club.github.io/border-collie-exercise-routines.html">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Open Sans', 'Arial', sans-serif; background: #f5f7fb; color: #1f2937; line-height: 1.72; }
+  a { color: #1a3a1a; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .topbar { background: #1a3a1a; box-shadow: 0 2px 8px rgba(0,0,0,0.14); }
+  .topbar-inner { max-width: 1120px; margin: 0 auto; padding: 0 22px; min-height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+  .brand { color: #fff; font-weight: 700; font-size: 1.04rem; }
+  .nav { display: flex; gap: 14px; flex-wrap: wrap; }
+  .nav a { color: rgba(255,255,255,0.92); font-size: 0.9rem; }
+  .crumbs { background: #fff; border-bottom: 1px solid #e5e7eb; }
+  .crumbs-inner { max-width: 1120px; margin: 0 auto; padding: 10px 22px; color: #6b7280; font-size: 0.87rem; display: flex; gap: 8px; flex-wrap: wrap; }
+  .hero { background: linear-gradient(135deg, #1a3a1a 0%, #3f6212 100%); color: #fff; }
+  .hero-inner { max-width: 1120px; margin: 0 auto; padding: 34px 22px; }
+  .hero p { margin: 0 0 10px; opacity: 0.86; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem; }
+  .hero h1 { margin: 0 0 10px; font-size: 2.15rem; line-height: 1.12; max-width: 820px; }
+  .hero .lead { margin: 0; max-width: 760px; font-size: 1.02rem; text-transform: none; letter-spacing: 0; opacity: 0.92; }
+  .layout { max-width: 1120px; margin: 28px auto 48px; padding: 0 22px; display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 26px; align-items: start; }
+  .article { background: #fff; border-radius: 14px; padding: 30px; box-shadow: 0 1px 8px rgba(0,0,0,0.08); }
+  .article .meta { color: #6b7280; font-size: 0.9rem; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid #e5e7eb; }
+  .article h2 { color: #0f172a; font-size: 1.45rem; margin: 34px 0 14px; line-height: 1.24; }
+  .article h3 { color: #1a3a1a; font-size: 1.08rem; margin: 22px 0 10px; }
+  .article p, .article li { color: #374151; }
+  .article ul, .article ol { padding-left: 22px; margin: 12px 0 18px; }
+  .article table { width: 100%; border-collapse: collapse; margin: 20px 0 26px; font-size: 0.95rem; }
+  .article th { text-align: left; background: #eef2ff; color: #0f172a; padding: 12px 14px; border: 1px solid #dbe2ea; }
+  .article td { padding: 12px 14px; border: 1px solid #dbe2ea; vertical-align: top; }
+  .article blockquote { margin: 20px 0; padding: 16px 18px; border-left: 4px solid #1a3a1a; background: #f8fafc; color: #334155; }
+  details { border: 1px solid #e5e7eb; border-radius: 10px; padding: 14px 16px; margin: 10px 0; background: #fafafa; }
+  summary { cursor: pointer; font-weight: 600; color: #0f172a; }
+  .sidebar { display: grid; gap: 18px; position: sticky; top: 18px; }
+  .sidebar-panel { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 8px rgba(0,0,0,0.08); }
+  .sidebar-panel h3 { margin: 0 0 10px; color: #0f172a; font-size: 1rem; }
+  .sidebar-panel p, .sidebar-panel li { color: #4b5563; font-size: 0.92rem; }
+  .sidebar-panel ul { margin: 0; padding-left: 18px; }
+  .sidebar-newsletter { background: linear-gradient(135deg, #1a3a1a 0%, #3f6212 100%); }
+  .sidebar-newsletter h3, .sidebar-newsletter p { color: #fff; }
+  .sidebar-newsletter input { width: 100%; padding: 10px 12px; border: 0; border-radius: 6px; margin: 10px 0 8px; }
+  .sidebar-newsletter button { width: 100%; padding: 10px 12px; border: 0; border-radius: 6px; background: #fff; color: #1a3a1a; font-weight: 700; cursor: pointer; }
+  .footer { background: #0f172a; color: rgba(255,255,255,0.74); }
+  .footer-inner { max-width: 1120px; margin: 0 auto; padding: 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 0.87rem; }
+  .footer a { color: rgba(255,255,255,0.9); }
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { position: static; }
+    .hero h1 { font-size: 1.74rem; }
+  }
+
+  .article-breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 12px; color: #6b7280; font-size: 0.88rem; }
+  .article-breadcrumb a { color: #6b7280; }
+  .article-breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
+
+</style>
+
+
+<style id="sidebar-follow-20261025">
+[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
+height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
+min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
+[data-follow-parent]{overflow:visible!important;align-items:start}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
+width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
+[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
+.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
+background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
+.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
+overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
+max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
+.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
+</style>
+
+<!-- social-cards:start -->
+<meta property="og:title" content="Tug-E-Nuff Aero-Tug Review 2026: Soft Disc for Collies">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://border-collie-club.github.io/tug-e-nuff-aero-tug-review.html">
+<meta property="og:description" content="Tug-E-Nuff Aero-Tug review: weight, floating, durability and tug handle checked against Border Collie disc habits, plus a fit checker for your dog.">
+<meta property="og:image" content="https://border-collie-club.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:secure_url" content="https://border-collie-club.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Border Collie standing in a green meadow">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tug-E-Nuff Aero-Tug Review 2026: Soft Disc for Collies">
+<meta name="twitter:description" content="Tug-E-Nuff Aero-Tug review: weight, floating, durability and tug handle checked against Border Collie disc habits, plus a fit checker for your dog.">
+<meta name="twitter:image" content="https://border-collie-club.github.io/assets/social-share-20261025.jpg">
+<meta name="twitter:image:alt" content="Border Collie standing in a green meadow">
+<!-- social-cards:end -->
+<style>.hero-inner.with-photo{display:grid;grid-template-columns:minmax(0,1fr) 300px;column-gap:48px;grid-template-rows:auto auto 1fr;align-items:start}.hero-inner.with-photo>*{grid-column:1}.hero-inner.with-photo>.hero-photo{grid-column:2;grid-row:1/span 3;margin:0;align-self:center}.hero-photo img{display:block;width:100%;height:auto;border-radius:8px}.hero-photo figcaption{font-size:11px;color:inherit;opacity:.75;margin-top:4px}@media(max-width:860px){.hero-inner.with-photo{display:block}.hero-photo{display:none}}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How Much Exercise Does a Border Collie Really Need? Owner Routines, Working Dogs and Rest Days", "description": "How much exercise does a Border Collie need? Compare owner-reported routines, separate sheep work from daily activity, and build a clear plan for quieter days.", "datePublished": "2026-11-04", "dateModified": "2026-11-04", "author": {"@type": "Person", "name": "Callum Reid"}, "publisher": {"@type": "Organization", "name": "Border Collie Club"}, "mainEntityOfPage": "https://border-collie-club.github.io/border-collie-exercise-routines.html"}</script><style id="aios-video-layout">
+.aios-video-card{box-sizing:border-box;width:100%;max-width:100%;min-width:0;margin:1.5rem 0;padding:1rem;border:1px solid #c7cec6;border-radius:8px;background:transparent;overflow:hidden;font:inherit}
+.aios-video-card a{display:block;position:relative;max-width:100%;color:inherit;text-decoration:underline;text-underline-offset:.2em;line-height:1.5;overflow-wrap:anywhere}
+.aios-video-card a:focus-visible,.aios-video-mobile:focus-visible{outline:3px solid #a44a1c;outline-offset:4px}
+.aios-video-poster{display:block;position:relative;width:100%;aspect-ratio:16/9;background-position:center;background-size:cover;background-color:#192d25;border-radius:4px;overflow:hidden}
+.aios-video-play{position:absolute;inset:0;display:grid;place-items:center;color:white;font-size:2rem;text-shadow:0 2px 5px black;background:linear-gradient(transparent,#0006)}
+.aios-video-title{display:block;margin:.75rem 0 .35rem;font-size:1rem;font-weight:700}.aios-video-channel{display:block;font-size:.78rem;opacity:.85}
+.aios-video-card iframe{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;border:0}.aios-video-mobile{display:block;margin:1rem 0;font-size:.9rem}
+.aios-video-card[data-placement="compact"]{max-width:34rem}.sidebar .aios-video-card{margin:1rem 0;padding:.75rem}
+@media(max-width:760px){.aios-video-card{padding:.85rem}.aios-video-title{font-size:.95rem}}
+</style><style id="site-chrome">
+:where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
+[class*="wrap"],[class*="inner"],[class*="layout"],[class*="container"]{box-sizing:border-box}
+/* ── Top bar ── */
+  .sc-topbar{
+    background: #1a3a1a;
+    color: #fff;
+    padding: 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+.sc-topbar-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+  }
+.sc-topbar-brand{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+  }
+.sc-topbar-nav{
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+.sc-topbar-nav a{
+    color: rgba(255,255,255,0.88);
+    font-size: 0.88rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+.sc-topbar-nav a:hover{
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    text-decoration: none;
+  }
+@media(max-width:600px) {
+    .sc-topbar-nav { display: none; }}
+/* ── Footer ── */
+  .sc-footer{
+    background: #142e14;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 0.82rem;
+    margin-top: 40px;
+  }
+.sc-footer-nav{ margin-bottom: 8px; }
+.sc-footer-nav a{
+    color: rgba(255,255,255,0.85);
+    margin: 0 10px;
+    font-size: 0.85rem;
+  }
+.reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
+/* ── Top bar ── */
+  .sc-topbar{
+    background: #1a3a1a;
+    color: #fff;
+    padding: 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+.sc-topbar-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+  }
+.sc-topbar-brand{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+  }
+.sc-topbar-nav{
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+.sc-topbar-nav a{
+    color: rgba(255,255,255,0.88);
+    font-size: 0.88rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+.sc-topbar-nav a:hover{
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    text-decoration: none;
+  }
+@media(max-width:600px) {
+    .sc-topbar-nav { display: none; }}
+/* ── Footer ── */
+  .sc-footer{
+    background: #142e14;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 0.82rem;
+    margin-top: 40px;
+  }
+.sc-footer-nav{ margin-bottom: 8px; }
+.sc-footer-nav a{
+    color: rgba(255,255,255,0.85);
+    margin: 0 10px;
+    font-size: 0.85rem;
+  }
+.sc-topbar a,.sc-footer a{text-decoration:none}
+/* links blue: the most recognisable clickable colour (owner 2026-10-13); not the bar, footer, buttons or cards */
+a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]){color:#0066cc!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):visited{color:#0052a3!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):hover{text-decoration:underline}
+/* site name always readable on the bar, whatever the article CSS does with links (owner 2026-10-13) */
+.sc-topbar .sc-topbar-brand,.sc-topbar .sc-topbar-brand:visited,.sc-topbar .sc-topbar-brand:hover{color:#fff!important}
+.sc-topbar a,.sc-footer a{text-decoration:none}
+@media(max-width:700px){header[class^="sc-"] [class*="inner"],header[class^="sc-"]{flex-wrap:wrap;height:auto}header[class^="sc-"] nav,header[class^="sc-"] [class*="nav"]{display:flex;flex-wrap:wrap;gap:6px 14px}header[class^="sc-"] [class*="inner"]{padding-top:8px;padding-bottom:8px}main,article,aside,[class*="wrap"]>*,[class*="layout"]>*,[class*="content"],[class*="column"]{min-width:0!important;max-width:100%}table{display:block!important;width:auto!important;max-width:100%!important;overflow-x:auto}img,iframe,video{max-width:100%;height:auto}h1,h2,h3,p,li{overflow-wrap:anywhere}[class*="wrap"],[class*="layout"],[class*="rich"],[class*="content"]{grid-template-columns:minmax(0,1fr)!important}article *,[class*="content"] *,[class*="rich"] *{box-sizing:border-box!important;max-width:100%!important;min-width:0!important}table{overflow-x:auto!important}}
+</style>
+<style id="sc-font">body{font-family:'Open Sans', 'Arial', sans-serif}body h1,body h2,body h3{font-family:'Open Sans', 'Arial', sans-serif}</style>
+<style id="sc-collie-design">:root{--cc-paper:#f2f7f3;--cc-white:#fff;--cc-ink:#172f3b;--cc-muted:#536771;--cc-line:#d2e0d6;--cc-lime:#d9ee91;--cc-hero:url("/assets/collie-hero.webp");--cc-rest:url("/assets/collie-photo2.webp")}
+*{box-sizing:border-box}body{margin:0;font:17px/1.8 Arial,Helvetica,sans-serif;background:var(--cc-paper);color:var(--cc-ink)}a{color:#1d4ed8;text-underline-offset:.2em}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #a44a1c;outline-offset:4px}
+.sc-topbar{background:var(--cc-ink);position:relative;box-shadow:none;border:0}.sc-topbar-inner{max-width:1320px;padding:22px 32px;min-height:96px;height:auto;display:flex;align-items:center;justify-content:space-between;gap:24px;margin:auto}.sc-topbar-brand{font:800 1.5rem/1.1 Arial,sans-serif;letter-spacing:-.06em;color:#f5fff0}.sc-topbar-brand:hover{color:var(--cc-lime);text-decoration:none}.sc-topbar-nav{display:flex;list-style:none;gap:6px;padding:0;margin:0;flex-wrap:wrap}.sc-topbar-nav a{display:block;color:#eff8ed;padding:11px 14px;min-height:44px;font-size:.8rem;border-radius:6px}.sc-topbar-nav a:hover,.sc-topbar-nav a[aria-current="page"]{background:var(--cc-lime);color:var(--cc-ink);text-decoration:none}
+.breadcrumb{background:transparent;border:0}.breadcrumb-inner{max-width:1320px;padding:14px 32px;font-size:.7rem;color:var(--cc-muted)}.breadcrumb-inner a{color:var(--cc-ink)}
+.collie-cover{max-width:1320px;margin:16px auto 48px;padding:0 32px;display:grid;grid-template-columns:1.05fr 1fr;column-gap:48px;row-gap:24px;align-items:center}.collie-cover h1{grid-column:1;grid-row:1;font:800 clamp(3rem,5.7vw,5.1rem)/.99 Arial,sans-serif;letter-spacing:-.075em;color:var(--cc-ink);border:0;padding:0;margin:20px 0 0;text-wrap:balance}.collie-cover .intro{grid-column:1;grid-row:2;color:var(--cc-muted);font-size:1.04rem;margin:0;max-width:500px}.collie-cover .categories{grid-column:1;grid-row:3;display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}.cat-tag{background:var(--cc-lime);color:var(--cc-ink);border:1px solid #becf8a;border-radius:5px;padding:7px 11px;font-size:.7rem;font-weight:700}
+.collie-cover::after{content:"";grid-column:2;grid-row:1/4;min-height:470px;height:100%;background:var(--cc-hero) 68% center/cover no-repeat;border-radius:12px 72px 12px 12px;box-shadow:14px 14px 0 var(--cc-lime)}
+.page-wrap{max-width:1320px;margin:auto;display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;padding:0 32px 72px;align-items:start}.main-content{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;background:transparent;padding:0;border-radius:0;box-shadow:none}.main-content>article{position:relative;background:var(--cc-white)!important;padding:28px 30px 38px!important;margin:0!important;border:1px solid var(--cc-line)!important;border-radius:12px!important;box-shadow:none;min-width:0;transition:box-shadow .15s}.main-content>article:hover{box-shadow:0 0 0 2px #9eb892}.main-content>article h2{font:750 1.5rem/1.22 Arial,sans-serif!important;letter-spacing:-.04em;margin:0 0 18px!important}.main-content>article h2 a{color:var(--cc-ink)!important}.main-content>article h2 a::after{content:"";position:absolute;inset:0;border-radius:12px}.main-content>article p{font-size:.9rem!important;color:var(--cc-muted)!important;line-height:1.75}.main-content>article p:first-of-type{font-size:.7rem!important;letter-spacing:.06em;color:#47613c!important}.main-content>article:first-of-type{grid-column:1/-1;background:var(--cc-ink)!important;border-color:var(--cc-ink)!important;padding:34px!important}.main-content>article:first-of-type h2{font-size:2.1rem!important}.main-content>article:first-of-type h2 a{color:#f5ffe9!important}.main-content>article:first-of-type p{color:#d4e3da!important}
+.sidebar{display:grid;gap:24px;position:static}.sidebar-about{background:#e1ebdb!important;border:1px solid #c9d9bf;border-radius:12px!important;box-shadow:none;padding:24px!important;margin:0;color:var(--cc-ink);font-size:.87rem;overflow:hidden}.sidebar-about::before{content:"";display:block;height:175px;margin:-24px -24px 24px;background:var(--cc-rest) center/cover}.sidebar-about strong{display:block;font-size:1.35rem;line-height:1.3;letter-spacing:-.035em;color:var(--cc-ink);margin-bottom:16px}.sidebar-links,.sidebar-panel{padding:22px!important;background:#fff!important;border:1px solid var(--cc-line);border-radius:12px!important;box-shadow:none;margin:0}.sidebar :is(h3,h4){font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--cc-ink);margin:22px 0 12px}.sidebar :is(h3,h4):first-child{margin-top:0}.sidebar ul{list-style:none;padding:0;margin:0}.sidebar li{padding:0;margin:0}.sidebar a{display:block;padding:10px 0;color:var(--cc-ink);border-bottom:1px solid var(--cc-line);font-size:.82rem;line-height:1.55}
+.hero{background:#e1ebdc;color:var(--cc-ink);padding:0;border-bottom:1px solid var(--cc-line)}.hero-inner{max-width:1180px;margin:auto;padding:48px 32px}.hero h1{font:800 clamp(2rem,3.8vw,3.5rem)/1.08 Arial,sans-serif;letter-spacing:-.055em;color:var(--cc-ink);margin:12px 0 24px;max-width:1020px}.hero .lead{color:var(--cc-muted);font-size:1.1rem;line-height:1.8;opacity:1}.hero p:not(.lead){font-size:.72rem;letter-spacing:.06em;color:#45613c}
+.layout{max-width:1320px;display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;padding:0 32px;margin:36px auto 64px;align-items:start}.article,.article-rich,article.article{min-width:0;background:#fff;border:1px solid var(--cc-line);padding:36px;border-radius:12px;box-shadow:none;font-size:17px}.article h2{font:750 1.7rem/1.3 Arial,sans-serif;letter-spacing:-.035em;color:var(--cc-ink);margin:34px 0 18px}.article h3{color:var(--cc-ink);font-size:1.12rem;margin:26px 0 12px}.article p,.article li{color:#304c42;line-height:1.9}.article p{margin-bottom:18px}.article :is(ul,ol){padding-left:24px}.article a{color:#1d4ed8;text-decoration:underline}.article .meta,.article-breadcrumb{font-size:.74rem;color:var(--cc-muted)}.article-breadcrumb{display:flex;flex-wrap:wrap;gap:6px;line-height:1.7;margin-bottom:16px}
+.article :is(.herd-tool,.teen-tool,.callout){background:#eef5e9;border:1px solid #b8cca9;border-radius:10px;padding:24px;margin:26px 0}.article :is(input,select,textarea){font:inherit;min-width:0;max-width:100%;padding:10px 12px;min-height:44px;border:1px solid #8da47c;border-radius:5px;background:white;color:var(--cc-ink)}.article button,.panel button{font:700 .95rem/1.4 Arial,sans-serif;background:var(--cc-lime);color:var(--cc-ink);border:1px solid #aec875;padding:12px 18px;min-height:46px;border-radius:6px;cursor:pointer}.article input[type=checkbox]{width:20px;height:20px;min-height:0;accent-color:#456b38}.article .teen-out{background:white;border:1px solid var(--cc-line);padding:20px}.article :is(.teen-flag,blockquote){border-left:4px solid #b57935;background:#faf1df;padding:18px 22px}.article table{display:block;max-width:100%;overflow-x:auto;border-collapse:collapse}.article :is(th,td){padding:12px;border-bottom:1px solid var(--cc-line);font-size:.9rem;line-height:1.7}.article th{background:#e8f0df;color:var(--cc-ink)}.article details{background:#f2f7ed;border:1px solid var(--cc-line);padding:16px;margin:12px 0}.article summary{cursor:pointer;min-height:44px;font-weight:700}.article .collie-video{position:relative;aspect-ratio:16/9;margin:26px 0;background:#172f3b;overflow:hidden;border-radius:10px}.article .collie-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.wrap{max-width:980px;margin:40px auto 64px;padding:0 32px}.wrap>.panel{background:#fff;padding:40px 44px;border:1px solid var(--cc-line);border-radius:12px;box-shadow:none}.panel h1{font:800 clamp(2rem,4vw,3.25rem)/1.1 Arial,sans-serif;letter-spacing:-.05em;color:var(--cc-ink);border:0;margin:0 0 26px;padding:0}.panel h2{font-size:1.6rem;color:var(--cc-ink);margin:28px 0 16px}.panel :is(ul,ol){padding-left:22px;margin:24px 0}.panel li{padding:9px 0}.panel a{color:#1d4ed8}.panel :is(input,textarea,select){font:inherit;width:100%;max-width:100%;padding:12px;border:1px solid #8da47c;background:white;color:var(--cc-ink)}
+.sc-footer{background:var(--cc-ink);color:#d0dfd8;border-top:6px solid var(--cc-lime);padding:38px 28px;margin:0;font-size:.74rem}.sc-footer-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 24px;margin:0 auto 20px}.sc-footer-nav a{color:#f0ffe9;padding:10px 0;margin:0;min-height:44px}.sc-footer p{text-align:center;max-width:900px;margin:auto}img,iframe,video{max-width:100%}main,article,aside,section{min-width:0}h1,h2,h3,p,li{overflow-wrap:anywhere}
+@media(max-width:1050px){.sc-topbar-inner{flex-wrap:wrap}.collie-cover{gap:24px}.page-wrap,.layout{grid-template-columns:minmax(0,1fr) 230px;gap:24px}.main-content{grid-template-columns:minmax(0,1fr)}.main-content>article:first-of-type{grid-column:auto}}
+@media(max-width:760px){body{font-size:16px}.sc-topbar-inner{display:block;padding:20px}.sc-topbar-brand{display:block;margin-bottom:18px}.sc-topbar nav{display:block!important}.sc-topbar-nav{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}.sc-topbar-nav a{padding:11px 3px;text-align:center;font-size:.77rem}.breadcrumb-inner{padding:12px 20px}.collie-cover{display:flex;flex-direction:column;align-items:stretch;padding:0 20px;margin:12px auto 36px;gap:20px}.collie-cover h1{font-size:clamp(2.8rem,12vw,4rem);margin:0}.collie-cover .intro{font-size:1rem}.collie-cover .categories{margin:0}.collie-cover::after{display:block;min-height:330px;height:330px;border-radius:10px 50px 10px 10px;box-shadow:7px 7px 0 var(--cc-lime);margin-right:7px}.page-wrap,.layout{display:grid;grid-template-columns:minmax(0,1fr)!important;padding:0 20px 40px;margin:0 auto;gap:28px}.layout{margin-top:28px}.main-content{grid-template-columns:minmax(0,1fr);gap:18px}.main-content>article{padding:25px!important}.main-content>article:first-of-type{padding:28px!important}.main-content>article:first-of-type h2{font-size:1.8rem!important}.sidebar{display:grid!important;position:static}.hero-inner{padding:32px 20px}.hero h1{font-size:clamp(2rem,8.5vw,2.8rem)}.article,.article-rich,article.article{padding:26px 20px;font-size:16px}.article h2{font-size:1.5rem}.article :is(.teen-tool,.herd-tool){padding:20px 16px}.article :is(input:not([type=checkbox]),select){width:100%}.wrap{padding:0 20px;margin:28px auto 40px}.wrap>.panel{padding:28px 22px}.sc-footer-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 12px;text-align:center}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
+
+/* readable on the dark featured card (blue-link rule is stronger than plain classes) */
+.main-content>article:first-of-type h2 a:is(#_,a),.main-content>article:first-of-type h2 a:is(#_,a):visited{color:#f5ffe9!important}
+</style>
+</head>
+<body>
+<header class="sc-topbar">
+  <div class="sc-topbar-inner">
+    <a class="sc-topbar-brand" href="/">Border Collie Guide</a>
+    <nav>
+      <ul class="sc-topbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/care.html">Care</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/sitemap.html">Sitemap</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="hero">
+  <div class="hero-inner">
+    <p>Border Collie everyday routines</p>
+    <h1>How Much Exercise Does a Border Collie Really Need? Owner Routines, Working Dogs and Rest Days</h1>
+    <p class="lead">Real routine examples, a daily time ledger, and a clearer distinction between purposeful work, outings, and downtime.</p>
+    
+  </div>
+</section>
+<div class="layout" data-follow-parent="true">
+  <article class="article"><nav class="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/blog.html">Blog</a><span>›</span><span aria-current="page">Exercise routines and rest days</span></nav><style>.article a{color:#0066cc}.article a:visited{color:#0052a3}.article a:hover{text-decoration:underline}.article{min-width:0}.routine-tool{border:2px solid #1a3a1a;border-radius:12px;padding:18px;background:#f6faf4;margin:24px 0}.routine-tool h2{margin-top:0}.routine-tool label{display:block;font-weight:600;margin:10px 0 5px}.routine-tool select,.routine-tool input{box-sizing:border-box;font:inherit;width:100%;min-width:0;max-width:100%;padding:9px;border:1px solid #aebcae;border-radius:5px}.routine-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px}.routine-tool button{font:inherit;background:#1a3a1a;color:#fff;border:0;border-radius:6px;padding:10px 14px;margin:12px 8px 0 0;cursor:pointer}.routine-tool :focus-visible{outline:3px solid #0066cc;outline-offset:3px}#routine-output{background:#fff;border-left:4px solid #1a3a1a;padding:14px;margin-top:16px;overflow-wrap:anywhere}.routine-scroll{max-width:100%;overflow-x:auto}.article .aios-video-card a{color:#0066cc}.article .aios-video-card a:visited{color:#0052a3}@media(max-width:480px){.routine-grid{grid-template-columns:1fr}.routine-tool{padding:12px}}</style><p>Asking how much exercise a Border Collie really needs often produces an hourly target, but an hour spent moving sheep is not the same record as an hour outdoors, an hour chasing a toy, or an hour walking and sniffing. A better starting point is a clearly described day that includes movement, useful activities, and genuine opportunities to switch off. This guide compares owner-reported routines and helps you inspect your own schedule without turning somebody else's dog into your benchmark.</p>
+<blockquote><strong>Quick answer:</strong> The owner reports below do not establish a universal daily exercise requirement. One working-dog household describes 10–15 minutes of sheep work per dog plus roughly an hour of hiking or trail running most days; a pet-mix owner reports two or three 30-minute walks plus other activities. Those are different routines, not competing prescriptions. Keep ordinary movement, focused tasks, and rest opportunities visible in your plan.</blockquote>
+<section class="routine-tool" aria-labelledby="routine-heading">
+<h2 id="routine-heading">Audit your daily routine without inventing an exercise score</h2>
+<p>Enter non-overlapping minutes from one observed day. Give each time block one main label: training during a walk belongs in the walk block, not both. Blank fields count as zero; estimates are fine if you keep them labeled in your own notes.</p>
+<form id="routine-form"><label for="routine-day">Day described</label><select id="routine-day"><option value="ordinary">An ordinary day</option><option value="quiet">A lower-key day</option></select><div class="routine-grid"><label for="routine-walk">Walking and exploring (minutes)<input id="routine-walk" type="number" min="0" max="1440" step="any"></label><label for="routine-play">Active toy play (minutes)<input id="routine-play" type="number" min="0" max="1440" step="any"></label><label for="routine-stock">Actual livestock work (minutes)<input id="routine-stock" type="number" min="0" max="1440" step="any"></label><label for="routine-skills">Separate skills or search activities (minutes)<input id="routine-skills" type="number" min="0" max="1440" step="any"></label><label for="routine-quiet">Quiet rest opportunities, including night (minutes)<input id="routine-quiet" type="number" min="0" max="1440" step="any"></label></div><button type="submit">Check my time record</button><button type="button" id="routine-reset">Clear</button></form>
+<div id="routine-output" role="status" aria-live="polite">Your summary will appear here. This is a time-accounting tool, not a recommended exercise allowance.</div>
+<noscript><p>Add each non-overlapping block and subtract the total from 1,440 minutes to see how much of the day remains unrecorded. Unrecorded time is not automatically sleep.</p></noscript>
+</section>
+<p>This Dogs Trust Dog School video introduces enrichment and shows coach Emily working with Riker; use it to understand another kind of activity in a daily routine, not to convert games into an equivalent number of walking minutes.</p>
+
+<section data-aios-media="card" class="aios-video-card" data-placement="compact"><a data-aios-video="9vhSIFKMefQ" href="https://www.youtube.com/watch?v=9vhSIFKMefQ" target="_blank" rel="noopener noreferrer"><span class="aios-video-poster" aria-hidden="true" style="background-image:url(https://i.ytimg.com/vi/9vhSIFKMefQ/hqdefault.jpg)"><span class="aios-video-play">▶</span></span><span class="aios-video-title">Enrichment ideas for your puppy | Dog School | Dogs Trust</span><span class="aios-video-channel">Dogs Trust Dog School · YouTube ↗</span></a></section><h2>What do real owner-reported Border Collie routines look like?</h2>
+<p>They look different even within a single discussion. The useful detail is what owners counted, what else the dogs did, and what the report left out. We selected the following examples for those contrasts, not because they form a representative sample.</p>
+<h3>Read the whole routine, not its smallest number</h3>
+<p>These examples come from the May 2026 discussion <a href="https://www.reddit.com/r/BorderCollie/comments/1tng86x/">“Border collies, exercise, and down time.”</a> They are unverified owner accounts: we did not check the dogs, their ancestry, their activity, or their outcomes. The mix is labeled explicitly, and no average is calculated from these different kinds of time records.</p>
+<div class="routine-scroll"><table><caption>Reported routines: examples to inspect, not daily targets</caption><thead><tr><th>Owner's described setting</th><th>Reported activity</th><th>Important context or missing detail</th></tr></thead><tbody><tr><td>Working sheepdogs</td><td>Aim for no more than 10–15 minutes of sheep work per dog daily; about an hour of hiking or trail running most days</td><td>Livestock work is only one part of the account. Other time is described as hanging out.</td></tr><tr><td>Older foster Border Collie</td><td>A 40-minute morning walk and a couple of 15-minute backyard fetch/frisbee sessions</td><td>No complete day or independently measured outcome; this is not a recommendation for older dogs.</td></tr><tr><td>Border Collie–Australian Shepherd mix</td><td>Two or three 30-minute walks, plus fetch, off-leash time, yard access and indoor games</td><td>Walking alone totals 60–90 minutes. Extra activities are not timed, so total daily activity is unknown.</td></tr><tr><td>Farm companion, no livestock work described</td><td>About an hour wandering and running around while the owner does farm tasks</td><td>This describes moving around the property, not an hour of commanded sheep work.</td></tr></tbody></table></div>
+<h3>What these accounts cannot tell you</h3>
+<p>The reports do not identify the shortest sufficient day, the best schedule, or a success rate. A dog described as resting between tasks may still have opportunities for movement and companionship that a short online summary never mentions. Conversely, a long list of activities may include overlapping time. Keep those gaps visible instead of filling them with assumptions.</p>
+<h2>Do working Border Collies really work all day?</h2>
+<p>Some work is task-based and intermittent, but a brief account of one farm cannot describe every farm or season. Crucially, minutes actively moving livestock are not a complete exercise diary. A pet routine should not be built by copying the smallest work number in a comment.</p>
+<h3>A job has a purpose beyond covering distance</h3>
+<p>The <a href="https://www.isds.org.uk/major-trials-events/about-isds-trials/">International Sheep Dog Society's explanation of trials</a> describes practical tasks reflecting shepherding, with the handler directing the dog through voice commands, whistles, or both. That supports a useful distinction: stock work involves responding to a handler and a changing task, rather than simply accumulating running time. It does not establish a pet's daily requirement.</p>
+<p>In the forum example, a short morning exercise on responding to “lie down” and a later trailer-loading task sit alongside a separate description of longer outings. Adding every number in that comment would risk counting examples and daily aims twice. The well-built reading is to retain the categories and the owner's qualifiers.</p>
+<h3>Do not turn a farm story into a shortcut</h3>
+<p>Another commenter reports about three minutes of work on a particular day. That number is not evidence that three minutes of activity is enough for a household Border Collie. It also does not tell us how much the dog moved before or afterward. Treat “work time” as a named part of the day, not a substitute for the rest of the schedule.</p>
+<p>If you are bringing a former farm dog into a household, the guide to <a href="/farm-border-collie-adoption.html">a farm Border Collie's first weeks at home</a> covers that transition separately. The exercise examples here do not predict how quickly a particular dog will adjust.</p>
+<h2>What makes a routine better than simply adding minutes?</h2>
+<p>A useful routine identifies what the dog gets to do and what happens afterward. Include opportunities to explore, interact, practice familiar skills, and rest. Quality here means a clear, sustainable structure, not a premium product or a longer checklist.</p>
+<h3>Give activities a description</h3>
+<p><a href="https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs">Dogs Trust's enrichment guidance</a> emphasizes individual preferences, opportunities to sniff and explore, observing engagement, and including rest in the daily routine. Use those principles to describe the experience, rather than only its duration. The same page offers examples of searching for food or a favorite toy and practicing skills.</p>
+<p>In your notes, distinguish a familiar route with opportunities to sniff from repeated toy throws in the same space. Record an easy search game separately from walking unless it happened during that walk. There is no supported conversion here saying that a minute of sniffing replaces a set number of minutes of running.</p>
+<h3>Make the finish part of the activity</h3>
+<p>Plan where you put the toy, what happens when you return indoors, and where the dog can rest without constant interruptions. Keep the next step simple enough to repeat. If the difficult moment is your work meeting finishing, use the separate <a href="/border-collie-call-ending.html">calm call-ending practice guide</a>; this article is about the whole day, not a new protocol for that particular cue.</p>
+<h2>What should a rest day mean in a pet household?</h2>
+<p>For this planning guide, a lower-key day means fewer demanding scheduled activities while keeping ordinary care, toilet opportunities, interaction, and a usable resting environment. It does not mean leaving the dog without anything to do. This is a household planning definition, not a fixed rest-day formula.</p>
+<p>In the same owner discussion, a commenter describing their dogs as working pets says they do not work every day or even every week, while remaining with the owner throughout the day. That is a report about intermittent work and companionship, not evidence that basic movement or daily care disappeared. It is a useful distinction to preserve when translating “a day off” into household life.</p>
+<h3>Keep the familiar parts</h3>
+<p>Write down the ordinary parts of your day that will still happen: going outside, a familiar walk, meals, time together, and quiet spaces. Then identify the optional activity that changes, such as a special outing or a formal practice session. This makes a day off understandable on paper without assuming that every dog will immediately accept a different weekend.</p>
+<p>Offer a familiar, easy activity if appropriate, rather than introducing a collection of complicated puzzles because it is a quiet day. Notice whether the dog engages willingly and can return to an ordinary activity afterward. If it becomes a frustrating exercise for both of you, simplify the arrangement rather than trying to complete the planned menu.</p>
+<h3>A rest opportunity is not a sleep measurement</h3>
+<p>Record “quiet room available” or “settled on the rug” when that is what you observed. Do not label every minute without a walk as sleep. The ledger above intentionally leaves unrecorded time unclassified: it might include meals, household movement, interaction, waiting, or rest that you did not observe.</p>
+<h2>Does asking for another game mean the routine is insufficient?</h2>
+<p>Not by itself. Bringing a toy or watching your hand tells you what happened, not how many more exercise minutes the dog requires. Keep those observations alongside the schedule instead of treating every request as an instruction to extend it.</p>
+<h3>Separate the timetable from individual behaviors</h3>
+<p>Write “brought the ball after I stood up” rather than “still had energy to burn.” Note whether this happens after every activity or at a particular household transition. Those are different questions for a reward-based trainer to help you examine. The owner reports in this article cannot explain the reason for an individual dog's behavior.</p>
+<p>If following household movement turns into controlling cats or children, use the separate guide to <a href="/border-collie-herding-cats-kids.html">managing herding in shared spaces</a>. Adding minutes to the walking column does not itself teach the household boundaries discussed there.</p>
+<h3>Do not demand an instant switch-off</h3>
+<p>Choose a place where the dog already rests comfortably, keep interruptions modest, and observe what follows a familiar outing. Discuss repeated difficulty settling with a qualified reward-based trainer who can see the actual routine. Do not assume the answer is either “do more” or “do less” from an online total alone.</p>
+<h2>Build a routine you can maintain: a practical checklist</h2>
+<p>Start from an observed day before redesigning your week. Keep the record simple enough to repeat, and change one clearly described feature rather than everything at once. This checklist organizes information; it does not prescribe exercise amounts.</p>
+<ol><li><strong>Record the existing day.</strong> List walks, play, separate skills, any actual livestock work, and quiet rest opportunities. Mark estimates honestly.</li><li><strong>Remove overlaps.</strong> If a walk included a search game, give that time one main label in the ledger. Do not count yard access as continuous running.</li><li><strong>Describe what the dog could do.</strong> Add a short note such as “explored the familiar path” or “practiced an easy retrieve.” Duration alone leaves this out.</li><li><strong>Record the finish.</strong> Note the first ordinary activity afterward: drinking, exploring, resting, following you, or offering a toy. Avoid turning an observation into a diagnosis.</li><li><strong>Sketch a lower-key version.</strong> Preserve the familiar daily arrangements and choose which optional activity changes. Leave room for actual rest rather than filling every gap with another task.</li><li><strong>Review comparable days.</strong> Compare ordinary days with ordinary days, and note context changes. Take the record to a trainer if a workable pattern remains difficult to establish.</li></ol>
+<h3>Keep age-related questions separate</h3>
+<p>This is not a puppy exercise chart, a sport-conditioning plan, or a set of rules for every life stage. The <a href="/border-collie-teenage-phase.html">Border Collie teenage-phase guide</a> provides separate developmental context. Do not transplant the older foster dog's schedule or a farm dog's task duration onto a puppy.</p>
+<h2>Common mistakes when comparing exercise routines</h2>
+<p>The biggest mistakes are comparing different definitions of activity and treating owner confidence as measured evidence. Use the reports as questions to ask about your own day, not a standard you must match. A durable routine needs clear labels as much as a calendar.</p>
+<ul><li><strong>Counting livestock work as the entire day.</strong> In the detailed working-dog account, outings were described separately.</li><li><strong>Summing overlapping activities.</strong> A walk containing training is still the same period of time.</li><li><strong>Turning an anecdote into a minimum.</strong> None of these selected reports identifies a sufficient allowance for all Border Collies.</li><li><strong>Treating access as active minutes.</strong> An open yard does not tell you what the dog did there.</li><li><strong>Filling a quiet day with nonstop enrichment.</strong> An opportunity to rest belongs in the plan too.</li><li><strong>Using a universal conversion rule.</strong> This article supplies no “mental activity equals walking” multiplier.</li></ul>
+<h2>Frequently asked questions</h2>
+<details><summary>Is there one daily exercise number for every Border Collie?</summary><p>The selected owner reports do not establish one. They describe different activities and incomplete days, so their time totals should not be treated as universal requirements.</p></details><details><summary>Does three minutes of sheep work mean three minutes of exercise is enough?</summary><p>No. A short livestock task is not a complete account of movement, outings, interaction, or rest. In the detailed working-dog example, longer outings were described separately.</p></details><details><summary>How much walking did owners in these examples report?</summary><p>One owner described a 40-minute morning walk plus play sessions. The owner of a Border Collie–Australian Shepherd mix described two or three 30-minute walks plus untimed extras. These are unverified examples, not prescriptions.</p></details><details><summary>Can a Border Collie have a lower-key day?</summary><p>Here, a lower-key day means fewer demanding scheduled activities while preserving ordinary care, outside opportunities, interaction, and a usable resting environment. It does not mean withdrawing all activity or attention.</p></details><details><summary>Does the routine calculator measure sleep or exercise needs?</summary><p>No. It adds your non-overlapping time blocks and identifies unrecorded time. Quiet rest opportunities are not measured sleep, and the tool supplies no recommended allowance.</p></details><details><summary>Does sniffing replace a fixed amount of walking?</summary><p>This article provides no conversion ratio. Record what the dog did and how the activity fitted into the day rather than exchanging minutes using an unsupported multiplier.</p></details>
+<h2>Build the day, not a competition over hours</h2>
+<p>How much exercise a Border Collie really needs cannot be determined from the shortest farm chore or the longest forum schedule. A more useful comparison keeps movement, focused activity, companionship, and rest distinct. Use the owner reports to sharpen your questions, record your own day clearly, and build a routine that is repeatable without pretending its time total is a universal answer.</p>
+<p class="ai-note" style="border-left:4px solid #1a3a1a;background:#f7f9fa;padding:12px 16px;margin:24px 0;font-size:0.9rem;color:#4b5563"><strong>Written by Callum Reid.</strong> Created with AI assistance.</p><script>(function(){'use strict';var form=document.getElementById('routine-form'),out=document.getElementById('routine-output'),ids=['walk','play','stock','skills','quiet'];function read(key){var text=document.getElementById('routine-'+key).value.trim();return text===''?0:Number(text);}form.addEventListener('submit',function(event){event.preventDefault();var values=ids.map(read),day=document.getElementById('routine-day').value;if(!values.every(function(v){return Number.isFinite(v)&&v>=0&&v<=1440;})||!['ordinary','quiet'].includes(day)){out.textContent='Use minutes from 0 to 1,440 and choose a listed day type. Blank entries count as zero.';return;}var total=values.reduce(function(a,b){return a+b;},0);if(total>1440){out.textContent='The blocks exceed a 24-hour day. Check units and remove overlapping time before adding them.';return;}var movement=values[0]+values[1]+values[2],unrecorded=1440-total;out.textContent=(day==='ordinary'?'Ordinary day':'Lower-key day')+': '+total.toFixed(1)+' minutes recorded. Walking, active play and livestock work: '+movement.toFixed(1)+' minutes; separate skills/search activities: '+values[3].toFixed(1)+' minutes; quiet rest opportunities: '+values[4].toFixed(1)+' minutes. Unrecorded time: '+unrecorded.toFixed(1)+' minutes. These are descriptive categories, not interchangeable exercise credits. Quiet opportunities are not measured sleep; unrecorded time is not automatically rest. No recommended daily exercise allowance is calculated.';});document.getElementById('routine-reset').addEventListener('click',function(){form.reset();out.textContent='Your summary will appear here. This is a time-accounting tool, not a recommended exercise allowance.';});})();</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there one daily exercise number for every Border Collie?", "acceptedAnswer": {"@type": "Answer", "text": "The selected owner reports do not establish one. They describe different activities and incomplete days, so their time totals should not be treated as universal requirements."}}, {"@type": "Question", "name": "Does three minutes of sheep work mean three minutes of exercise is enough?", "acceptedAnswer": {"@type": "Answer", "text": "No. A short livestock task is not a complete account of movement, outings, interaction, or rest. In the detailed working-dog example, longer outings were described separately."}}, {"@type": "Question", "name": "How much walking did owners in these examples report?", "acceptedAnswer": {"@type": "Answer", "text": "One owner described a 40-minute morning walk plus play sessions. The owner of a Border Collie–Australian Shepherd mix described two or three 30-minute walks plus untimed extras. These are unverified examples, not prescriptions."}}, {"@type": "Question", "name": "Can a Border Collie have a lower-key day?", "acceptedAnswer": {"@type": "Answer", "text": "Here, a lower-key day means fewer demanding scheduled activities while preserving ordinary care, outside opportunities, interaction, and a usable resting environment. It does not mean withdrawing all activity or attention."}}, {"@type": "Question", "name": "Does the routine calculator measure sleep or exercise needs?", "acceptedAnswer": {"@type": "Answer", "text": "No. It adds your non-overlapping time blocks and identifies unrecorded time. Quiet rest opportunities are not measured sleep, and the tool supplies no recommended allowance."}}, {"@type": "Question", "name": "Does sniffing replace a fixed amount of walking?", "acceptedAnswer": {"@type": "Answer", "text": "This article provides no conversion ratio. Record what the dog did and how the activity fitted into the day rather than exchanging minutes using an unsupported multiplier."}}]}</script></article>
+
+  <aside class="sidebar" data-follow-sidebar="existing">
+    
+    
+    <section class="sidebar-panel"><h3>Quick Links</h3><ul><li><a href="/">Home page</a></li><li><a href="/blog.html">All posts</a></li><li><a href="/care.html">Border Collie care checklist</a></li><li><a href="/about.html">About this site</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/sitemap.html">Sitemap</a></li></ul><h3 style="margin-top:16px;">Latest articles</h3><ul class="latest-list" style="margin:0;padding-left:18px"><li><a href="/farm-border-collie-adoption.html">Adopting a Farm-Bred or Failed Working Border Collie: What to Expect in the First Weeks of House Life</a></li><li><a href="/border-collie-call-ending.html">Why Your Border Collie Gets Excited When Work Calls End—and How to Teach a Calm Finish</a></li><li><a href="/border-collie-weight-growth.html">How Much Do Border Collies Weigh? Adult Reports and Growth by Age</a></li><li><a href="/border-collie-herding-cats-kids.html">How to Stop a Border Collie Herding Cats and Kids (Without Killing the Instinct)</a></li><li><a href="/border-collie-teenage-phase.html">Border Collie Teenage Phase: What Happens From 6 to 24 Months and How to Get Through It</a></li></ul></section>
+  </aside>
+</div>
+
+
+<script>
+(function() {
+  var _ga4 = "";
+  var _site = "border-collie-club.github.io";
+  var _article = "border-collie-exercise-routines";
+  var _startTime = Date.now();
+  var _scrollMarks = {25: false, 50: false, 75: false, 100: false};
+
+  function _send(name, params) {
+    var data = Object.assign({page: _article, site: _site}, params);
+    if (_ga4 && typeof gtag === "function") {
+      gtag("event", name, data);
+    }
+    try {
+      var log = JSON.parse(localStorage.getItem("_ptrack") || "[]");
+      log.push({t: new Date().toISOString(), e: name, d: data});
+      if (log.length > 200) log = log.slice(-200);
+      localStorage.setItem("_ptrack", JSON.stringify(log));
+    } catch(e) {}
+  }
+
+  // Scroll depth
+  function _onScroll() {
+    var scrolled = window.scrollY + window.innerHeight;
+    var total = document.documentElement.scrollHeight;
+    var pct = Math.round((scrolled / total) * 100);
+    [25, 50, 75, 100].forEach(function(mark) {
+      if (!_scrollMarks[mark] && pct >= mark) {
+        _scrollMarks[mark] = true;
+        _send("scroll_depth", {depth: mark});
+      }
+    });
+  }
+  window.addEventListener("scroll", _onScroll, {passive: true});
+
+  // Time on page
+  function _sendTime() {
+    var secs = Math.round((Date.now() - _startTime) / 1000);
+    _send("time_on_page", {seconds: secs});
+  }
+  document.addEventListener("visibilitychange", function() {
+    if (document.hidden) _sendTime();
+  });
+  window.addEventListener("pagehide", _sendTime);
+
+  // Newsletter CTA
+  document.addEventListener("click", function(e) {
+    var btn = e.target.closest("button");
+    if (btn) {
+      var box = btn.closest(".sidebar-newsletter, [class*='newsletter']");
+      if (box) _send("newsletter_click", {label: btn.textContent.trim().slice(0, 40)});
+    }
+    var link = e.target.closest("a[href]");
+    if (link && !link.href.includes(window.location.hostname)) {
+      _send("outbound_click", {url: link.href.slice(0, 100)});
+    }
+  });
+
+  // Pageview
+  _send("article_view", {});
+})();
+</script>
+
+
+
+
+
+
+
+
+
+<footer class="sc-footer">
+  <div class="sc-footer-nav">
+    <a href="/">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/sitemap.html">Sitemap</a>
+  </div>
+  <p>&copy; 2026 border-collie-club.github.io &mdash; Border Collie Guide. All rights reserved.</p>
+</footer>
+</body>
+</html>
